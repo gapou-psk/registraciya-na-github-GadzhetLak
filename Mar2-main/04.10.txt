@@ -1,0 +1,43 @@
+# Marsim
+Основы проектирования БД
+USE store;
+
+SELECT good.name AS good_name, category.name AS category_name FROM good
+
+LEFT JOIN category
+
+ON category.id = good.id
+
+}}}}}}}
+
+USE store;
+
+SELECT good.name AS good_name, category.name FROM good
+
+LEFT JOIN category
+
+ON category.id = good.id
+
+UNION ALL
+
+SELECT good.name, category.name FROM good
+
+RIGHT JOIN category
+
+ON category.id = good.id
+
+WHERE good.name is NULL
+
+}}}}}}
+
+USE store;
+
+SELECT source.name, sale_sum FROM client
+
+LEFT JOIN sale
+
+ON sale.id = client.id
+
+INNER JOIN source
+
+ON sale.id = source.id

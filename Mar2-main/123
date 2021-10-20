@@ -1,0 +1,29 @@
+5 Задание
+
+USE project_simple;
+
+SELECT count(project_name) FROM project
+
+6 задание
+
+USE store_simple;
+
+SELECT category, count(category) FROM store GROUP BY category
+
+7 задание
+
+USE store_simple;
+
+SELECT category, count(category), Max(price) FROM store
+
+GROUP BY price
+
+ORDER by price desc
+
+LIMIT 5;
+
+8 задание
+
+USE project_simple;
+
+SELECT count(project_name), sum(budget), avg(datediff(project_start, project_finish)) FROM project
