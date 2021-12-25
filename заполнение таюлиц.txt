@@ -1,0 +1,37 @@
+INSERT INTO `груз` (`idГруз`, `TIP GRUZA`, `TONNAZh GRUZA`, `DATA ZAKAZA`, `GABARITY GRUZA`) 
+VALUES
+('1',N'Скоропортящиеся грузы',N'1',N' 2021.05.19',N'ширина 0,5 м; длина 1 м; высота  0,5 м;'),
+('2', N'Скоропортящиеся грузы',N'2',N'2021.04.14',N'ширина 1 м; длина 1 м; высота 0,5 м;'),
+('3',N' Опасные грузы',N'3 ',N'2021.07.12',N'ширина 1 м; длина 1 м; высота 0,5 м;'),
+('4',N'Наливные грузы',N'10',N'2021.09.29',N'ширина 1 м; длина 1 м; высота  0,5 м;'),
+('5',N'Опасные грузы',N'6',N'2021.06.07',N'ширина 1 м; длина 1 м; высота  0,5 м;');
+
+INSERT INTO `klienty` (`idtable1`, ` FIO`, `TELEFON`, `ИНН`) VALUES (1, 'Русаков Мечислав Мэлсович', '78907181117', '893473264540');
+INSERT INTO `klienty` (`idtable1`, ` FIO`, `TELEFON`, `ИНН`) VALUES (2, 'Алексеев Юстин Геннадиевич', '79907454180', '664031877450');
+INSERT INTO `klienty` (`idtable1`, ` FIO`, `TELEFON`, `ИНН`) VALUES (3, 'Артемьев Гавриил Авксентьевич', '78903602854', '185344057343');
+INSERT INTO `klienty` (`idtable1`, ` FIO`, `TELEFON`, `ИНН`) VALUES (4, 'Шарапов Мартин Всеволодович', '78908377929', '830709118469');
+INSERT INTO `klienty` (`idtable1`, ` FIO`, `TELEFON`, `ИНН`) VALUES (5, 'Николаев Юстин Федорович', '78909690826', '257932041073');
+
+INSERT INTO `МАРШРУТ` (`idМАРШРУТ`, `ADRES DOSTAVKI`, `ADRES OTPRAVKI`) VALUES (1, '023324, Кемеровская область, город Раменское, проезд Косиора, 82', '413603, Нижегородская область, город Одинцово, шоссе Гагарина, 37');
+INSERT INTO `МАРШРУТ` (`idМАРШРУТ`, `ADRES DOSTAVKI`, `ADRES OTPRAVKI`) VALUES (2, '413898, Владимирская область, город Балашиха, пр. 1905 года, 88', '813810, Липецкая область, город Кашира, спуск Гоголя, 70');
+INSERT INTO `МАРШРУТ` (`idМАРШРУТ`, `ADRES DOSTAVKI`, `ADRES OTPRAVKI`) VALUES (3, '384653, Калужская область, город Подольск, бульвар Ленина, 05', '874458, Орловская область, город Подольск, проезд Гагарина, 72');
+INSERT INTO `МАРШРУТ` (`idМАРШРУТ`, `ADRES DOSTAVKI`, `ADRES OTPRAVKI`) VALUES (4, '606665, Ленинградская область, город Павловский Посад, пл. Будапештсткая, 23', '494804, Тверская область, город Лотошино, пр. Космонавтов, 83');
+INSERT INTO `МАРШРУТ` (`idМАРШРУТ`, `ADRES DOSTAVKI`, `ADRES OTPRAVKI`) VALUES (5, '719543, Ленинградская область, город Шатура, въезд Будапештсткая, 74', ' 140436, Рязанская область, город Балашиха, спуск Сталина, 25');
+
+INSERT INTO `transport_company`.`transport` (`idTransport`, `TONNAZh`, `MARKA`, `GABARITY`, `GOSNOMER`) VALUES (1, '1', 'Тонар', '12*2*2', 'Е 996 Н Р');
+INSERT INTO `transport_company`.`transport` (`idTransport`, `TONNAZh`, `MARKA`, `GABARITY`, `GOSNOMER`) VALUES (2, '2', 'Ower', '12*2*3', 'Н 502 У Х');
+INSERT INTO `transport_company`.`transport` (`idTransport`, `TONNAZh`, `MARKA`, `GABARITY`, `GOSNOMER`) VALUES (3, '5 ', 'Volvo', '13*2*2', 'Н 988 Т Т');
+INSERT INTO `transport_company`.`transport` (`idTransport`, `TONNAZh`, `MARKA`, `GABARITY`, `GOSNOMER`) VALUES (4, '8', 'КАМАЗ', '12*2*2', 'О 487 В К');
+INSERT INTO `transport_company`.`transport` (`idTransport`, `TONNAZh`, `MARKA`, `GABARITY`, `GOSNOMER`) VALUES (5, '15', 'Tesla', '15*2*4', 'В 353 Х Х');
+
+INSERT INTO `transport_company`.`voditel` (`idVoditel`, `FIO`, `NOMER VODITELSKIKh PRAV`, `KATEGORIYa`, `Strakhovoi polis`) VALUES (1, 'Калинина Василиса Дмитриевна', '5 2 6 6 2 8 1 9 6 1', 'c1', '77854180960');
+INSERT INTO `transport_company`.`voditel` (`idVoditel`, `FIO`, `NOMER VODITELSKIKh PRAV`, `KATEGORIYa`, `Strakhovoi polis`) VALUES (2, 'Савицкий Ярослав Андреевич', '8 5 7 8 5 8 8 8 7 9', 'c1', '5582285813987256');
+INSERT INTO `transport_company`.`voditel` (`idVoditel`, `FIO`, `NOMER VODITELSKIKh PRAV`, `KATEGORIYa`, `Strakhovoi polis`) VALUES (3, 'Макаров Тимофей Тимофеевич', '5 1 4 2 5 9 3 7 5 3', 'c1', '5440555270295590');
+INSERT INTO `transport_company`.`voditel` (`idVoditel`, `FIO`, `NOMER VODITELSKIKh PRAV`, `KATEGORIYa`, `Strakhovoi polis`) VALUES (4, 'Терентьев Марк Никитич', '2 8 1 4 8 1 3 9 7 9', 'c1', '5989637980703265');
+INSERT INTO `transport_company`.`voditel` (`idVoditel`, `FIO`, `NOMER VODITELSKIKh PRAV`, `KATEGORIYa`, `Strakhovoi polis`) VALUES (5, 'Грачева София Вячеславовна', '4 1 5 2 4 8 5 9 9 9', 'c1', '3765708427876234');
+
+INSERT INTO `transport_company`.`zakazy` (`idZAKAZY`, `Transport_idTransport`, `Voditel_idVoditel`, `Klienty_idtable1`, `Груз_idГруз`, `МАРШРУТ_idМАРШРУТ`) VALUES (1, 1, 1, 1, 1, 1);
+INSERT INTO `transport_company`.`zakazy` (`idZAKAZY`, `Transport_idTransport`, `Voditel_idVoditel`, `Klienty_idtable1`, `Груз_idГруз`, `МАРШРУТ_idМАРШРУТ`) VALUES (2, 2, 2, 2, 2, 2);
+INSERT INTO `transport_company`.`zakazy` (`idZAKAZY`, `Transport_idTransport`, `Voditel_idVoditel`, `Klienty_idtable1`, `Груз_idГруз`, `МАРШРУТ_idМАРШРУТ`) VALUES (3, 3, 3, 3, 3, 3);
+INSERT INTO `transport_company`.`zakazy` (`idZAKAZY`, `Transport_idTransport`, `Voditel_idVoditel`, `Klienty_idtable1`, `Груз_idГруз`, `МАРШРУТ_idМАРШРУТ`) VALUES (4, 4, 4, 4, 4, 4);
+INSERT INTO `transport_company`.`zakazy` (`idZAKAZY`, `Transport_idTransport`, `Voditel_idVoditel`, `Klienty_idtable1`, `Груз_idГруз`, `МАРШРУТ_idМАРШРУТ`) VALUES (5, 5, 5, 5, 5, 5);
